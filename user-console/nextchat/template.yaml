@@ -22,5 +22,5 @@ template:
       #     resource: deployments
       #     name: terminal-{{ .Release.Name }}
       #     currentStatus: "{{- range .status.conditions }}{{- if eq .type \"Available\" }}{{- .status }}{{- end }}{{- end }}"
-      #     desiredStatus: "True"1
+      #     desiredStatus: "True"
       dependences: {}
