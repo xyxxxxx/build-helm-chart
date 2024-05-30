@@ -27,7 +27,9 @@ jobs:
 
       - name: Package and push chart
         run: |
-          cd build-helm-chart/user-console/nextchat
+          cd $GITHUB_WORKSPACE
+          ls
+          cd user-console/nextchat
           helm package ./chart
           helm push *.tgz oci://docker.io/t9kpublic
 
